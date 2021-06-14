@@ -1,0 +1,65 @@
+#feedback-bg{
+    background-image: url('../img/hogwarts-feedback-bg.jpg');
+}
+
+#feedback-main-image{
+    width: 300px;
+}
+
+.feedback-txt{
+    width: 500px;
+}
+
+.comment-yesno{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#yescomment-label{
+    padding: 0px 20px 0px 0px;
+}
+
+#nocomment{
+    margin: 0px 0px 0px 20px;
+}
+
+/* Handle star rating */
+.rating {
+    border: none;
+    float: left;
+}
+
+.rating > input {
+    display: none;
+}
+
+.rating > label:before {
+    margin: 5px;
+    font-size: 2.6em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: '\f005';
+}
+
+.rating > .half:before {
+    content: '\f089';
+    position: absolute;
+}
+
+.rating > label {
+    color: black;
+    float: right;
+}
+
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: #ffc107;
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label {
+    color: #fdce42;
+}

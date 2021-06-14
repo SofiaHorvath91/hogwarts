@@ -1,0 +1,135 @@
+.house-bg {
+  background-position: center;
+}
+
+#gryffindor-bg,
+#hufflepuff-bg,
+#slytherin-bg,
+#ravenclaw-bg {
+  background-size: cover;
+}
+
+#gryffindor-bg {
+  background-image: url('../img/gryffindor-bg.png');
+}
+
+#hufflepuff-bg {
+  background-image: url('../img/hufflepuff-bg.png');
+}
+
+#slytherin-bg {
+  background-image: url('../img/slytherin-bg.png');
+}
+
+#ravenclaw-bg {
+  background-image: url('../img/ravenclaw-bg.png');
+}
+
+#hogwarts-houses-bg {
+  background-image: url('../img/hogwarts-houses-bg.jpg');
+}
+
+.houses-sites-icon {
+  background-color: transparent;
+  border-radius: 0%;
+  height: auto;
+  width: 100px;
+  cursor: pointer;
+  transition: 0.5s;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(90%);
+}
+
+.houses-sites-icon:hover {
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
+.house-crest {
+  width: 180px;
+  margin-bottom: 25px;
+}
+
+.house-left {
+  flex: 10%;
+  padding-top: 4.5%;
+}
+
+.house-right {
+  flex: 90%;
+  padding-right: 30%;
+}
+
+.houses-icons-container,
+.house-site-container {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.houses-icons {
+  height: 65px;
+  width: 65px;
+  font-size: 30px;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  padding-top: 17.5px;
+}
+
+.gryffindor-icon {
+  background-color: #dc3545;
+  color: #ffc107;
+}
+
+.gryffindor-icon:hover {
+  color: #dc3545;
+  background-color: #ffc107;
+}
+
+.hufflepuff-icon {
+  background-color: #ffc107;
+  color: black;
+}
+
+.hufflepuff-icon:hover {
+  color: #ffc107;
+  background-color: black;
+}
+
+.ravenclaw-icon {
+  background-color: #0d6efd;
+  color: #ff7c02;
+}
+
+.ravenclaw-icon:hover {
+  color: #0d6efd;
+  background-color: #ff7c02;
+}
+
+.slytherin-icon {
+  background-color: #198754;
+  color: white;
+}
+
+.slytherin-icon:hover {
+  color: #198754;
+  background-color: white;
+}
+
+.house-modal-content {
+  margin: auto;
+  display: block;
+  width: 400px;
+  background-color: transparent;
+}
+
+.model-content-small {
+  width: 200px;
+}
+
+.caption-houses {
+  width: 100%;
+  max-width: 1200px;
+}

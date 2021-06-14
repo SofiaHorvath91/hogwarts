@@ -1,0 +1,259 @@
+@import url('../css/home.css');
+@import url('../css/history.css');
+@import url('../css/grounds.css');
+@import url('../css/castle.css');
+@import url('../css/studentlife.css');
+@import url('../css/subjects.css');
+@import url('../css/houses.css');
+@import url('../css/feedback.css');
+@import url('../css/sorting.css');
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+@import url('https://fonts.googleapis.com/css2?family=Texturina:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: Texturina, serif;
+}
+
+/* Body */
+
+body {
+  margin: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+p {
+  font-size: 18px;
+}
+
+.background {
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat:no-repeat;
+}
+
+.menu:hover {
+  transition: 0.5s;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Navbar */
+
+.navigationbar {
+  list-style-type: none;
+  display: flex;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.navigationbar li a {
+  float: left;
+  display: block;
+  line-height: 60px;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  margin: 0px;
+  padding: 10px 15px 10px 15px;
+}
+
+.logo-img {
+  width: 100px;
+  height: 70px;
+  float: left;
+  position: relative;
+  margin: 5px 15px 0px 5px;
+  cursor: pointer;
+}
+
+/* Navbar dropdown */
+
+.navbar,
+.navbar-container {
+  width: 100%;
+}
+
+.bg-dark {
+  background-color: transparent !important;
+}
+
+.navbar li a {
+  color: #212529 !important;
+  font-size: 18px;
+  margin: 10px 10px 0px 10px;
+}
+
+.navbar li a:hover {
+  color: rgb(98, 97, 97) !important;
+}
+
+.navbar-toggler {
+  margin: 15px 10px 0px 0px;
+  background-color: #212529;
+  float: right;
+}
+
+.logo-img {
+  width: 100px;
+  height: 60px;
+  float: left;
+  position: relative;
+  padding: 0px 10px 0px 10px;
+  cursor: pointer;
+}
+
+.gryffindor-text {
+  color: #dc3545;
+}
+
+.hufflepuff-text,
+.gryffindor-btn:hover {
+  color: #ffc107;
+}
+
+.ravenclaw-text {
+  color: #0d6efd;
+}
+
+.ravenclaw-second-text,
+.ravenclaw-btn:hover {
+  color: #ff7c02;
+}
+
+.slytherin-text {
+  color: #198754;
+}
+
+.slytherin-second-text {
+  color: white;
+}
+
+/* Handle resize */
+
+@media all and (max-width: 1050px) {
+  .navigationbar,
+  .navigationbar li a,
+  .dropdown,
+  .container-left,
+  .container-right,
+  .row {
+    float: none;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    flex: 100%;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .navigationbar li a {
+    text-align: center;
+  }
+
+  .house-left,
+  .house-right,
+  .history-container {
+    flex: 100%;
+  }
+
+  .house-right {
+    padding: 0%;
+  }
+
+  .house-left {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+  }
+
+  .houses-icons-container {
+    display: inline-block;
+    margin: 0 auto;
+    width: auto;
+  }
+}
+
+@media all and (max-width: 780px) {
+  .studentlife-icon-img {
+    width: 65px;
+    height: 65px;
+    margin: 0px 10px 0px 10px;
+  }
+}
+
+@media all and (max-width: 720px) {
+  .houses-sites-icon {
+    width: 100px;
+  }
+}
+
+@media all and (max-width: 700px) {
+  .modalClub-content,
+  .containerGallery,
+  .modal-content {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 580px) {
+  .houses-icons {
+    height: 32px;
+    width: 32px;
+    font-size: 18px;
+    padding-top: 8px;
+  }
+
+  .result-icon{
+    width: 60px;
+  }
+
+  .result-label{
+    width: 70px;
+    font-size: 22px;
+  }
+
+  .slideshow-container .mySlides .containerTransparent .contentTransparent {
+    font-size: 10px;
+  }
+
+  #godric-icon,
+  #helga-icon,
+  #rowena-icon,
+  #salazar-icon {
+    width: 65px;
+    height: 65px;
+    margin: 0px 5px 0px 5px;
+  }
+
+  .site-grounds,
+  .site-castle{
+    width: 60px;
+  }
+
+  #caste-grounds-center-icon{
+    width: 120px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+      height:100vh;
+  }
+}

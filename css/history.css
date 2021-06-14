@@ -1,0 +1,58 @@
+#history-bg {
+  background-image: url('../img/hogwarts-history-bg.jpg');
+}
+
+.history-img-container {
+  padding: 0px 0px 10px 0px;
+}
+
+.welcome-img {
+  width: 150px;
+}
+
+.history-icon-container {
+  padding: 10px 0px 0px 0px;
+}
+
+.history-container {
+  flex: 50%;
+}
+
+.history-container-img {
+  margin: auto;
+  display: flex;
+  width: auto;
+  padding: 10px 0px 10px 0px;
+  align-items: center;
+}
+
+#godric-icon,
+#helga-icon,
+#rowena-icon,
+#salazar-icon {
+  width: 120px;
+  height: 120px;
+  opacity: 0.9;
+  filter: grayscale(50%);
+}
+
+#godric-icon:hover,
+#helga-icon:hover,
+#rowena-icon:hover,
+#salazar-icon:hover {
+  -webkit-filter: grayscale(0);
+  filter: none;
+  opacity: 1;
+}
+
+.img-general {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  display: block;
+}
+
+.founderpic {
+  width: 50%;
+}

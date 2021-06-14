@@ -1,0 +1,61 @@
+
+.sorting-start-bg {
+    background-image: url('../img/hogwarts-sorting-base-bg.jpg');
+}
+
+.sorting-play-bg{
+    background-image: url('../img/hogwarts-sorting-bg.png');
+}
+
+.quiz-main-img{
+    width: 320px;
+}
+
+.quiz-div{
+    color:white;
+}
+
+.question-div{
+    padding-bottom: 20px;
+}
+
+.answer_label{
+    font-size: 20px;
+}
+
+#quiz-next-button,
+#quiz-end-button,
+#quiz-new-button{
+    margin: 20px 0px 20px 0px;
+}
+
+.result-label{
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px 10px 0px 10px;
+    width: 100px;
+}
+
+.result-icon {
+    background-color: transparent;
+    border-radius: 0%;
+    height: auto;
+    width: 100px;
+    margin: 0px 10px 0px 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(90%);
+}
+
+.result-icon:hover{
+    -webkit-filter: grayscale(0);
+    filter: none;
+}
+
+#result-modal-pic{
+    background-color: transparent;
+    width: 80%;
+}

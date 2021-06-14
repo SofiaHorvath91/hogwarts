@@ -1,0 +1,34 @@
+#subjects-bg {
+  background-image: url('../img/hogwarts-subjects-bg.jpg');
+}
+
+.subject-welcome-img {
+  width: 300px;
+  margin: 5px 0px 10px 0px;
+}
+
+.subjects-main-title {
+  margin: 30px 0px 20px 0px;
+}
+
+.subjects-sub-title {
+  margin: 20px 0px 0px 0px;
+}
+
+.subject-icon {
+  height: 120px;
+  width: 120px;
+  margin: 0px 10px 0px 10px;
+}
+
+.subjects-sub-icon {
+  height: auto;
+  background: url('../img/iconSubject2.png') no-repeat left top;
+  background-size: 50px 100%;
+  float: left;
+  padding: 10px 10px 10px 70px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}

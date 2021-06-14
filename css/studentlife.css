@@ -1,0 +1,476 @@
+#studentlife-bg {
+  background-image: url('../img/hogwarts-life-bg.jpg');
+}
+
+.studentlife-icon-img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 0px 20px 0px 20px;
+  cursor: pointer;
+}
+
+.studentlife-icon-img:hover {
+  -webkit-filter: invert(1);
+  filter: invert(0.85);
+}
+
+/* Student life / Recruitment => Slide Show CSS */
+
+.mySlides {
+  display: none;
+}
+
+.slideshow-container,
+.containerGallery {
+  max-width: 750px;
+  position: relative;
+  margin: 30px auto auto auto;
+}
+
+.recruitmentSlidePic {
+  width: 100%;
+  height: 400px;
+}
+
+.slideshow-container .mySlides .containerTransparent {
+  position: relative;
+  max-width: 750px;
+  margin: auto 0;
+}
+
+.containerTransparent img {
+  vertical-align: top;
+}
+
+.slideshow-container .mySlides .containerTransparent .contentTransparent {
+  position: absolute;
+  background: rgba(240, 235, 235, 0.741);
+  font-size: 14px;
+  font-weight: bold;
+  width: 100%;
+  height: 15%;
+  padding-bottom: 0px;
+  text-align: center;
+  top: 85%;
+}
+
+.prev,
+.next,
+.prevGallery,
+.nextGallery {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 12px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: black;
+  font-size: 20px;
+  padding: 12px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.activeDot,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.fade:not(.show) {
+  opacity: 100;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Student life / Daily Life => Lightbox CSS */
+.rowLightBox {
+  margin: 20px auto auto auto;
+}
+
+.rowLightBox > .columnLightBox {
+  padding: 0 8px;
+}
+
+.rowLightBox:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.columnLightBox {
+  float: left;
+  width: 33%;
+}
+
+.modalLightBox {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+.modalLightBox-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  bottom: 0px;
+  width: 50%;
+  max-width: 1200px;
+}
+
+.columnLightBox img,
+.modalLightBox-content img {
+  width: 100%;
+}
+
+.closeLightBox {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.closeLightBox:hover,
+.closeLightBox:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlidesLightBox,
+.mySlidesLightBox2,
+.mySlidesLightBox3,
+.mySlidesLightBox4,
+.mySlidesLightBox5,
+.mySlidesLightBox6,
+.mySlidesLightBox7,
+.mySlidesLightBox8,
+.mySlidesLightBox9 {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prevLightBox,
+.nextLightBox {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.nextLightBox {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prevLightBox:hover,
+.nextLightBox:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modalLightBox .rowLightBox img {
+  margin-bottom: -5px;
+}
+
+.captionLightBox-containerLightBox {
+  text-align: center;
+  background-color: black;
+  padding: 2px 0px;
+  color: white;
+}
+
+.demoLightBox,
+.demoLightBox2,
+.demoLightBox3,
+.demoLightBox4,
+.demoLightBox5,
+.demoLightBox6,
+.demoLightBox7,
+.demoLightBox8,
+.demoLightBox9 {
+  opacity: 0.6;
+}
+
+.activeLightBox,
+.demoLightBox:hover,
+.demoLightBox2:hover,
+.demoLightBox3:hover,
+.demoLightBox4:hover,
+.demoLightBox5:hover,
+.demoLightBox6:hover,
+.demoLightBox7:hover,
+.demoLightBox8:hover,
+.demoLightBox9:hover {
+  opacity: 1;
+}
+
+img.hover-shadowLightBox,
+.clubImg {
+  border-radius: 5px;
+  transition: 0.3s;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(65%);
+}
+
+.hover-shadowLightBox:hover,
+.clubImg:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
+/* Student life / Teams+Clubs => Modals CSS */
+
+.clubImg {
+  cursor: pointer;
+}
+
+.modalClub {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modalClub-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+#captionClub {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+  cursor: default;
+}
+
+.modalClub-content,
+#captionClub {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+.closeModalClub {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.closeModalClub:hover,
+.closeModalClub:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.containerLay {
+  position: relative;
+  width: 50%;
+  margin: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 10%;
+  right: 0;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  width: 80%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: white;
+}
+
+.containerLay:hover .overlay {
+  opacity: 1;
+}
+
+.textLay {
+  font-size: 14px;
+  text-align: center;
+  cursor: default;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 265px;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Student life / Special Events => Slide Show Gallery CSS */
+.mySlidesGallery {
+  display: none;
+}
+
+.mySlidesGallery img {
+  height: auto;
+  width: 100%;
+}
+
+.prevGallery,
+.nextGallery {
+  top: 36%;
+}
+
+.nextGallery {
+  right: 12px;
+}
+
+.prevGallery:hover,
+.nextGallery:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  font-weight: normal;
+  height: 50px;
+}
+
+.rowGallery:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.demo {
+  opacity: 0.6;
+  width: 100%;
+  height: 20%;
+}
+
+#row-yearclose-img {
+  height: 50%;
+}
+
+.activeImg,
+.demo:hover {
+  opacity: 1;
+}
